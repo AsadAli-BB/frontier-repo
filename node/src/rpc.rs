@@ -8,7 +8,10 @@ use fc_rpc::{
 };
 use fc_rpc_core::types::{FeeHistoryCache, FilterPool};
 use fp_storage::EthereumStorageSchema;
-use frontier_template_runtime::{opaque::Block, AccountId, Balance, Hash, Index};
+use frontier_template_runtime::{opaque::Block, AccountId, Balance, Hash, Index, BlockNumber};
+
+// use pallet_contracts_rpc::{Contracts, ContractsApiServer};
+
 use jsonrpc_pubsub::manager::SubscriptionManager;
 use sc_client_api::{
 	backend::{AuxStore, Backend, StateBackend, StorageProvider},

@@ -1,5 +1,5 @@
 [package]
-authors = ['Substrate DevHub <https://github.com/substrate-developer-hub>']
+authors = ['Asad Ali']
 build = 'build.rs'
 description = 'A fresh FRAME-based Substrate node, ready for hacking.'
 edition = '2021'
@@ -40,6 +40,11 @@ version = '3.1'
 features = ['derive']
 package = 'parity-scale-codec'
 version = '3.1'
+
+pallet-contracts-rpc = { version = "4.0.0-dev", git = "https://github.com/paritytech/substrate.git", branch = "polkadot-v0.9.28" }
+pallet-contracts = { version = "4.0.0-dev", git = "https://github.com/paritytech/substrate.git", branch = "polkadot-v0.9.28" }
+
+
 
 [dependencies.fc-consensus]
 git = 'https://github.com/paritytech/frontier.git'
